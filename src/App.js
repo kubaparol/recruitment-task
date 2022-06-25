@@ -1,7 +1,16 @@
 import "./App.css";
 
+import StyledNormalize from "./styled";
+
+import HomePage from "./pages/HomePage";
+
 function App() {
-  return <h1>Init</h1>;
+  return (
+    <>
+      <StyledNormalize />
+      <HomePage />
+    </>
+  );
 }
 
 export default App;
