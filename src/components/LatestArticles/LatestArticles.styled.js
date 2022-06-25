@@ -59,7 +59,7 @@ const StyledHeaderContent = styled.section`
     font-size: 22px;
   }
   p:nth-child(3) {
-    color: green;
+    color: #3dd07d;
     font-size: 14;
     font-weight: 500;
     margin-bottom: 15px;

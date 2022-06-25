@@ -16,6 +16,14 @@ const StyledMainContent = styled.section`
     color: ${(props) => props.theme.headerMainContentColor};
     font-size: 36px;
     margin-bottom: 20px;
+    &::before {
+      content: "//";
+      position: relative;
+      margin-right: 10px;
+      font-size: 46px;
+      color: #ed2164;
+      letter-spacing: -6px;
+    }
   }
   p {
     margin-bottom: 30px;
