@@ -8,6 +8,9 @@ export default {
   articleBtnBackground: "#fff",
   articleBtnBorder: "#3dd07d",
   articleBtnColor: "#3dd07d",
+  headerMainContentColor: "#fff",
+  paragraphMainContentColor: "#fff",
+  mainBtnBackground: "#F1358E",
   media: {
     tablet: "screen and (min-width: 768px)",
     desktop: "screen and (min-width: 992px)",

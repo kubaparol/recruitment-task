@@ -37,6 +37,12 @@ const StyledButton = styled.button`
       border: 1px solid ${(props) => props.theme.articleBtnBorder};
       color: ${(props) => props.theme.articleBtnColor};
     `}
+  ${(props) =>
+    props.id === "mainContent" &&
+    css`
+      background-color: ${(props) => props.theme.mainBtnBackground};
+      padding: 12px 18px;
+    `}
 `;
 
 export default StyledButton;
