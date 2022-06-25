@@ -53,6 +53,21 @@ const StyledButton = styled.button`
       }
       padding: 12px 18px;
     `}
+  ${(props) =>
+    props.id === "close" &&
+    css`
+      padding: 0;
+      min-width: 0;
+      font-size: 28px;
+      margin-left: 15px;
+      background-color: transparent;
+      color: grey;
+      opacity: 0.7;
+      &:hover {
+        background-color: transparent;
+        opacity: 1;
+      }
+    `}
 `;
 
 export default StyledButton;

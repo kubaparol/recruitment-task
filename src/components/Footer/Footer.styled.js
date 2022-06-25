@@ -30,7 +30,7 @@ const StyledFooter = styled.section`
     border-bottom: 1px solid #ddd;
   }
   div {
-    margin-bottom: 30px;
+    margin: 42px;
     line-height: 1.7;
     opacity: 0.5;
     font-size: 14px;

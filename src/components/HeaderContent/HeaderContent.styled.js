@@ -40,6 +40,7 @@ const StyledHeaderContent = styled.section`
       display: block;
       margin: 50px;
       border-radius: 15px;
+      width: 450px;
     }
   }
   h2 {

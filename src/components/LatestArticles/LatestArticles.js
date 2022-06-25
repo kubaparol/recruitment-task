@@ -57,9 +57,9 @@ const LatestArticles = () => {
     },
   ];
 
-  const renderArticlesList = articles.map((article) => {
+  const renderArticlesList = articles.map((article, index) => {
     return (
-      <article>
+      <article key={index}>
         <a href={article.url}>
           <div style={{ backgroundImage: `url(${article.image})` }} />
         </a>
