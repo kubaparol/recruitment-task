@@ -9,9 +9,11 @@ import Footer from "../components/Footer";
 const HomePage = () => {
   return (
     <>
-      <Header />
-      <main>
+      <div style={{ backgroundColor: "#1DA7DA" }}>
+        <Header />
         <HeaderContent />
+      </div>
+      <main style={{ backgroundColor: "#FFFFFF" }}>
         <LatestArticles />
         <MainContent />
         <Footer />

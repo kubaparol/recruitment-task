@@ -2,6 +2,8 @@ import React from "react";
 
 import StyledHeaderContent from "./HeaderContent.styled";
 
+import seaImg from "../../assets/sea.jpg";
+
 import Button from "../Button";
 
 const HeaderContent = () => {
@@ -18,7 +20,7 @@ const HeaderContent = () => {
         </p>
         <Button>Browse Content</Button>
       </div>
-      <div />
+      <img src={seaImg} alt="sea_photo" />
     </StyledHeaderContent>
   );
 };

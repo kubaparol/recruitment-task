@@ -2,6 +2,8 @@ import React from "react";
 
 import StyledMainContent from "./MainContent.styled";
 
+import seaImg from "../../assets/sea.jpg";
+
 import Button from "../Button";
 
 const MainContent = () => {
@@ -15,7 +17,7 @@ const MainContent = () => {
         </p>
         <Button id="mainContent">Join dev awesome</Button>
       </header>
-      <div />
+      <img src={seaImg} alt="sea_image" />
     </StyledMainContent>
   );
 };

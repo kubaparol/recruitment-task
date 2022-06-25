@@ -29,21 +29,24 @@ const StyledHeaderContent = styled.section`
       text-align: left;
     }
     @media ${(props) => props.theme.media.desktop} {
+      min-width: 450px;
       max-width: 500px;
       margin: 50px;
     }
   }
-  div:nth-child(2) {
+  img {
+    display: none;
     @media ${(props) => props.theme.media.desktop} {
-      height: 400px;
-      width: 500px;
-      background-color: lightyellow;
+      display: block;
+      margin: 50px;
+      border-radius: 15px;
     }
   }
   h2 {
     color: #fff;
     font-size: 36px;
     margin-bottom: 20px;
+    font-weight: 400;
   }
   p {
     margin-bottom: 30px;

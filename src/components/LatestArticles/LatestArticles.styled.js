@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 const StyledHeaderContent = styled.section`
   height: auto;
-  padding-bottom: 60px;
+  padding-top: 35px;
+  padding-bottom: 100px;
   max-width: 1200px;
   margin: 0 auto;
   @media ${(props) => props.theme.media.tablet} {
@@ -29,6 +30,7 @@ const StyledHeaderContent = styled.section`
   h2 {
     padding-bottom: 10px;
     font-size: 30px;
+    font-weight: 400;
   }
   article {
     background-color: ${(props) => props.theme.articleBacground};
@@ -44,6 +46,9 @@ const StyledHeaderContent = styled.section`
       width: 30%;
     }
   }
+  a {
+    text-decoration: none;
+  }
   a > div {
     width: auto;
     height: 200px;
@@ -54,11 +59,11 @@ const StyledHeaderContent = styled.section`
   p {
     padding: 15px 30px;
   }
-  p:nth-child(2) {
+  p:nth-child(2) > a {
     color: #343434;
     font-size: 22px;
   }
-  p:nth-child(3) {
+  p:nth-child(3) > a {
     color: #3dd07d;
     font-size: 14;
     font-weight: 500;

@@ -16,6 +16,9 @@ const StyledButton = styled.button`
   text-transform: capitalize;
   font-size: 0.9em;
   min-width: 100px;
+  &:hover {
+    background-color: ${(props) => props.theme.defaultBtnBackgroundHover};
+  }
   @media ${(props) => props.theme.media.tablet} {
     cursor: pointer;
   }
@@ -36,11 +39,18 @@ const StyledButton = styled.button`
       background-color: ${(props) => props.theme.articleBtnBackground};
       border: 1px solid ${(props) => props.theme.articleBtnBorder};
       color: ${(props) => props.theme.articleBtnColor};
+      &:hover {
+        background-color: ${(props) => props.theme.articleBtnBackgroundHover};
+        color: ${(props) => props.theme.articleBtnColorHover};
+      }
     `}
   ${(props) =>
     props.id === "mainContent" &&
     css`
       background-color: ${(props) => props.theme.mainBtnBackground};
+      &:hover {
+        background-color: ${(props) => props.theme.mainBtnBackgroundHover};
+      }
       padding: 12px 18px;
     `}
 `;

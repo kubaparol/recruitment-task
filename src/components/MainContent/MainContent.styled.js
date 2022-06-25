@@ -22,8 +22,11 @@ const StyledMainContent = styled.section`
       margin-right: 10px;
       font-size: 46px;
       color: #ed2164;
-      letter-spacing: -6px;
+      letter-spacing: -2px;
     }
+  }
+  img {
+    display: none;
   }
   p {
     margin-bottom: 30px;
@@ -43,16 +46,18 @@ const StyledMainContent = styled.section`
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    div {
-      width: 450px;
-      height: 400px;
-      border: 1px solid red;
+    img {
+      display: block;
+      border-radius: 15px;
       margin-right: 75px;
     }
     header {
       margin-left: 75px;
       width: 50%;
       max-width: 500px;
+    }
+    p {
+      font-size: 22px;
     }
   }
 `;

@@ -15,7 +15,6 @@ const StyledFooter = styled.section`
     margin-left: -5px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 24px;
     justify-content: center;
   }
   li {
@@ -26,10 +25,24 @@ const StyledFooter = styled.section`
     text-decoration: none;
     color: black;
   }
+  a:hover {
+    color: ${(props) => props.theme.footerItemHoverColor};
+    border-bottom: 1px solid #ddd;
+  }
   div {
     margin-bottom: 30px;
     line-height: 1.7;
     opacity: 0.5;
+    font-size: 14px;
+  }
+  @media ${(props) => props.theme.media.mobile} {
+    div {
+      display: flex;
+      justify-content: center;
+    }
+    p {
+      margin-right: 10px;
+    }
   }
 `;
 
