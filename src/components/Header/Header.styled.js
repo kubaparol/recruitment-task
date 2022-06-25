@@ -53,6 +53,9 @@ const StyledHeader = styled.header`
       font-weight: 400;
       font-size: 17px;
       min-width: 20px;
+      @media ${(props) => props.theme.media.tablet} {
+        min-width: 100px;
+      }
     }
     button:nth-child(2) {
       display: none;
