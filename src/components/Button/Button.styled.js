@@ -30,6 +30,13 @@ const StyledButton = styled.button`
         display: none;
       }
     `}
+  ${(props) =>
+    props.id === "article" &&
+    css`
+      background-color: ${(props) => props.theme.articleBtnBackground};
+      border: 1px solid ${(props) => props.theme.articleBtnBorder};
+      color: ${(props) => props.theme.articleBtnColor};
+    `}
 `;
 
 export default StyledButton;
