@@ -6,6 +6,7 @@ import Button from "../Button";
 import List from "../List";
 import SearchBar from "../SearchBar";
 import Menu from "../Menu";
+import navItems from "../../data/navItems";
 
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
@@ -13,7 +14,6 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
   const [searchBarOpen, setSearchBarOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const items = [{ text: "Articles", url: "/" }];
   return (
     <>
       <StyledHeader>
@@ -23,7 +23,7 @@ const Header = () => {
               Tutorial<span>zine</span>
             </a>
           </div>
-          <List items={items} />
+          <List items={navItems} />
         </div>
         <Button
           icon={faBars}
@@ -39,7 +39,7 @@ const Header = () => {
         </div>
       </StyledHeader>
       {searchBarOpen ? <SearchBar setState={setSearchBarOpen} /> : null}
-      {menuOpen ? <Menu setState={setMenuOpen} items={items} /> : null}
+      {menuOpen ? <Menu setState={setMenuOpen} items={navItems} /> : null}
     </>
   );
 };

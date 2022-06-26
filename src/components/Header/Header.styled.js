@@ -24,6 +24,9 @@ const StyledHeader = styled.header`
     margin-left: 5px;
     margin-right: 15px;
   }
+  ul {
+    display: flex;
+  }
   li > a {
     vertical-align: middle;
     font-weight: 400;
