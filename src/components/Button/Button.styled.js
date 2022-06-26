@@ -29,6 +29,9 @@ const StyledButton = styled.button`
       background-color: transparent;
       min-width: 20px;
       opacity: 0.7;
+      &:focus {
+        background-color: transparent;
+      }
       @media ${(props) => props.theme.media.tablet} {
         display: none;
       }

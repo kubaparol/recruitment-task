@@ -4,13 +4,15 @@ import StyledHeader from "./Header.styled";
 
 import Button from "../Button";
 import List from "../List";
-import SearchBar from "../SearchBar/SearchBar";
+import SearchBar from "../SearchBar";
+import Menu from "../Menu";
 
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [searchBarOpen, setSearchBarOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const items = [{ text: "Articles", url: "/" }];
   return (
     <>
@@ -23,7 +25,11 @@ const Header = () => {
           </div>
           <List items={items} />
         </div>
-        <Button icon={faBars} id="bars" />
+        <Button
+          icon={faBars}
+          id="bars"
+          onClick={() => setMenuOpen(!menuOpen)}
+        />
         <div>
           <Button
             icon={faMagnifyingGlass}
@@ -33,6 +39,7 @@ const Header = () => {
         </div>
       </StyledHeader>
       {searchBarOpen ? <SearchBar setState={setSearchBarOpen} /> : null}
+      {menuOpen ? <Menu setState={setMenuOpen} items={items} /> : null}
     </>
   );
 };

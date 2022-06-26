@@ -7,8 +7,7 @@ const StyledHeader = styled.header`
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   @media ${(props) => props.theme.media.tablet} {
     height: 80px;
     padding-right: 15px;

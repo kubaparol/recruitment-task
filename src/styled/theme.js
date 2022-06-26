@@ -16,6 +16,7 @@ export default {
   mainBtnBackground: "#F1358E",
   mainBtnBackgroundHover: "#F1358E",
   footerItemHoverColor: "#3dd07d",
+  menuBackground: "#fff",
   media: {
     tablet: "screen and (min-width: 768px)",
     desktop: "screen and (min-width: 992px)",
