@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -22,6 +23,11 @@ const Menu = ({ items, setState }) => {
       </div>
     </StyledMenu>
   );
+};
+
+Menu.propTypes = {
+  items: PropTypes.array,
+  setState: PropTypes.func,
 };
 
 export default Menu;

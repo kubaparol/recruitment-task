@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -15,6 +16,10 @@ const SearchBar = ({ setState }) => {
       </div>
     </StyledSearchBar>
   );
+};
+
+SearchBar.propTypes = {
+  setState: PropTypes.func,
 };
 
 export default SearchBar;

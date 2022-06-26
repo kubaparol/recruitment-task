@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -11,6 +12,10 @@ const Button = (props) => {
       {props.children}
     </StyledButton>
   );
+};
+
+Button.propTypes = {
+  id: PropTypes.oneOf(["bars", "article", "mainContent", "close"]),
 };
 
 export default Button;

@@ -6,17 +6,21 @@ import LatestArticles from "../components/LatestArticles";
 import MainContent from "../components/MainContent";
 import Footer from "../components/Footer";
 
+import navItems from "../data/navItems";
+import latestArticles from "../data/latestArticles";
+import { footerItems, shareButtons } from "../data/footerItems";
+
 const HomePage = () => {
   return (
     <>
       <div style={{ backgroundColor: "#1DA7DA" }}>
-        <Header />
+        <Header items={navItems} />
         <HeaderContent />
       </div>
       <main style={{ backgroundColor: "#FFFFFF" }}>
-        <LatestArticles />
+        <LatestArticles articles={latestArticles} />
         <MainContent />
-        <Footer />
+        <Footer items={footerItems} shareButtons={shareButtons} />
       </main>
     </>
   );

@@ -1,13 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import StyledLatestArticles from "./LatestArticles.styled";
 
-import latestArticles from "../../data/latestArticles";
-
 import Button from "../Button";
 
-const LatestArticles = () => {
-  const renderArticlesList = latestArticles.map((article, index) => {
+const LatestArticles = (props) => {
+  const renderArticlesList = props.articles.map((article, index) => {
     return (
       <article key={index}>
         <a href={article.url}>
@@ -33,6 +32,10 @@ const LatestArticles = () => {
       </div>
     </StyledLatestArticles>
   );
+};
+
+LatestArticles.propTypes = {
+  articles: PropTypes.array,
 };
 
 export default LatestArticles;

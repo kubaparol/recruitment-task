@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import StyledListitem from "./ListItem.styled";
 
@@ -11,6 +12,12 @@ const ListItem = (props) => {
       </a>
     </StyledListitem>
   );
+};
+
+ListItem.propTypes = {
+  url: PropTypes.string,
+  text: PropTypes.string,
+  img: PropTypes.string,
 };
 
 export default ListItem;
