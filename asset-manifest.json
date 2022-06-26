@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/recruitment-task/static/css/main.8bc2a670.css",
+    "main.js": "/recruitment-task/static/js/main.9f9e7466.js",
+    "static/js/787.fcf87b86.chunk.js": "/recruitment-task/static/js/787.fcf87b86.chunk.js",
+    "static/media/machinelearning.png": "/recruitment-task/static/media/machinelearning.5d62f69a99b49cbc2153.png",
+    "static/media/jsgames.png": "/recruitment-task/static/media/jsgames.560a6bc2675d8887a5f6.png",
+    "static/media/asyncawait.png": "/recruitment-task/static/media/asyncawait.ed43e114c58bd276ebe7.png",
+    "static/media/gitTips.png": "/recruitment-task/static/media/gitTips.020e963bb6c100bc7c60.png",
+    "static/media/vscode.png": "/recruitment-task/static/media/vscode.87079dab92cd127f35ff.png",
+    "static/media/sea.jpg": "/recruitment-task/static/media/sea.90613217c25132bb74ea.jpg",
+    "static/media/freebie.jpg": "/recruitment-task/static/media/freebie.86f6de639327a4527c45.jpg",
+    "index.html": "/recruitment-task/index.html",
+    "main.8bc2a670.css.map": "/recruitment-task/static/css/main.8bc2a670.css.map",
+    "main.9f9e7466.js.map": "/recruitment-task/static/js/main.9f9e7466.js.map",
+    "787.fcf87b86.chunk.js.map": "/recruitment-task/static/js/787.fcf87b86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8bc2a670.css",
+    "static/js/main.9f9e7466.js"
+  ]
+}
