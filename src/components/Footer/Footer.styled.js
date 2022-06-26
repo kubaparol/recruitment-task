@@ -39,9 +39,15 @@ const StyledFooter = styled.section`
     div {
       display: flex;
       justify-content: center;
+      flex-direction: column;
     }
     p {
       margin-right: 10px;
+    }
+  }
+  @media ${(props) => props.theme.media.tablet} {
+    div {
+      flex-direction: row;
     }
   }
 `;
